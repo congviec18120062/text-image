@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <title>textimage</title>
+</head>
+
+<body>
+  <header class="flex flex-center">
+    <div class="logo">Textimage</div>
+    <div class="download"><img src="./img/download.svg" class="download-img" alt="download"></div>
+  </header>
+  <main class="grid">
+    <section class="flex input-text">
+      <div class="box upload-image" id="upload-image" data-choose="false"></div>
+      <div class="box title flex flex-center" id="title" data-choose="false"></div>
+      <div class="box content" id="content" data-choose="false"></div>
+      <div class="box source flex flex-center" id="source" data-choose="false"></div>
+    </section>
+    <section class="output-image">
+      <div class="flex flex-center canvas">
+        <canvas id="viewport" width="500px" height="600px"></canvas>
+      </div>
+    </section>
+  </main>
+  <footer class="flex flex-center">
+    <p class="copyright">&copy; Copyright <span id="current-year"></span>, Nguyễn Hoàng Nam</p>
+  </footer>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #011627;
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 2px solid white;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 3vw;
+}
+
+.download {
+  padding: 5px;
+  border: 1px solid white;
+}
+
+.download-img {
+  width: 20px;
+}
+
+main {
+  height: calc(100% - 100px);
+  grid-column-gap: 16px;
+  grid-template-columns: calc(50% - 8px) calc(50% - 8px);
+}
+
+.input-text {
+  border-right: 2px solid white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-text .box {
+  width: 80%;
+  background-color: #ffffff;
+  color: black;
+  font-family: "Verdana";
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 252, 231, 0.8);
+  -moz-box-shadow: 0px 0px 12px 0px rgba(0, 252, 231, 0.8);
+  box-shadow: 0px 0px 12px 0px rgba(0, 252, 231, 0.8);
+}
+
+.box {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.upload-image {
+  height: 38%;
+}
+
+.title {
+  height: 8%;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.content {
+  height: 30%;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.source {
+  height: 5%;
+  font-size: 13px;
+  font-style: italic;
+  padding-left: 20px;
+}
+
+.output-image {
+  border-left: 2px solid white;
+}
+
+.canvas {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+canvas {
+  /* width: 80%;
+  height: 80%; */
+}
+
+footer {
+  height: 40px;
+  width: 100%;
+  padding-left: 20px;
+  border-top: 2px solid white;
+}

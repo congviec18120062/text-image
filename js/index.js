@@ -59,10 +59,6 @@ if (sourceCheck) {
   showSource("Source");
 }
 
-// let canvasImageLink = canvas.toDataURL("image/png");
-let demoLink = "../img/demo.jpg";
-canvasBox.style.background = `url(${demoLink}) no-repeat top center`;
-
 //-----------------------------------------------
 
 function headerImage() {
@@ -82,6 +78,7 @@ function demoImage() {
     let imageWidth = imageHeight * ratio;
     let imageLeft = (canvasWidth - imageWidth) / 2;
     context.drawImage(img, imageLeft, 0, imageWidth, imageHeight);
+    canvasBox.style.background = `url(${img.src}) no-repeat center center`;
   };
 }
 
@@ -104,8 +101,6 @@ function showSource(source) {
 }
 
 function downloadCanvas(link, filename) {
-  // let canvasImage = new Image();
-  // canvasImage.src = canvas.toDataURL();
   link.href = canvas.toDataURL();
   link.download = filename;
 }

@@ -42,8 +42,14 @@ header {
 }
 
 .download {
-  padding: 5px;
   border: 1px solid white;
+}
+
+#download {
+  display: inline-block;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
 }
 
 .download-img {
@@ -105,12 +111,25 @@ main {
 
 .output-image {
   border-left: 2px solid white;
+  position: relative;
 }
 
 .canvas {
   width: 100%;
   height: 100%;
   justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.blur-image {
+  width: 100%;
+  height: 100%;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 
 canvas {

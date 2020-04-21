@@ -37,7 +37,7 @@ showSource("Source");
 
 function headerImage() {
   let img = new Image();
-  img.src = "./../img/picture.svg";
+  img.src = "img/picture.svg";
   img.onload = function () {
     context.drawImage(img, canvasWidth / 2 - 25, canvasHeight / 4 - 10, 50, 50);
   };
@@ -45,7 +45,7 @@ function headerImage() {
 
 function demoImage() {
   let img = new Image();
-  img.src = "./../img/demo.jpg";
+  img.src = "img/demo.jpg";
   img.onload = function () {
     let ratio = img.naturalWidth / img.naturalHeight;
     let imageHeight = canvasHeight / 2;

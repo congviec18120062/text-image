@@ -11,7 +11,7 @@
 <body>
   <header class="flex flex-center">
     <div class="logo">Textimage</div>
-    <div class="download"><img src="./img/download.svg" class="download-img" alt="download"></div>
+    <div class="download"><a href="#" id="download"><img src="./img/download.svg" class="download-img" alt="download"></a></div>
   </header>
   <main class="grid">
     <section class="flex input-text">
@@ -21,6 +21,7 @@
       <div class="box source flex flex-center" id="source" data-choose="false"></div>
     </section>
     <section class="output-image">
+      <div class="blur-image" id="canvas-box"></div>
       <div class="flex flex-center canvas">
         <canvas id="viewport" width="500px" height="600px"></canvas>
       </div>
